@@ -63,25 +63,25 @@ const Contact = () => {
         </h1>
 
         <p className="text-white/50  cursor-default font-Glimer-Light sm:mt-10 mt-8 xl:text-xl xl:max-w-2xl text-base sm:text-lg  1/2xl:text-2xl 1/2xl:max-w-4xl 2xl:text-3xl 2xl:max-w-5xl leading-6">
-          I'm not really active on{" "}
+          I'm not much active on{" "}
           <a
-            href="https://linkedin.com/in/tarunfy/"
+            href="https://www.instagram.com/devjain_official/"
             target="_blank"
             className="text-white font-Glimer-Medium"
           >
-            Linkedin
+            Instagram
           </a>{" "}
           but you can stay in touch with me on{" "}
           <a
-            href="https://twitter.com/tarunfy"
+            href="https://www.linkedin.com/in/devjainofficial/"
             target="_blank"
             className="text-white font-Glimer-Medium"
           >
-            Twitter
+            LinkedIn
           </a>
           . Sometimes I blog about some of my work on{" "}
           <a
-            href="https://dev.to/tarunfy"
+            href="https://dev.to/devjainofficial"
             target="_blank"
             className="text-white font-Glimer-Medium"
           >
@@ -89,11 +89,11 @@ const Contact = () => {
           </a>{" "}
           and some experiments on{" "}
           <a
-            href="https://instagram.com/tarunfy"
+            href="https://github.com/devjainofficial"
             target="_blank"
             className="text-white font-Glimer-Medium"
           >
-            Instagram
+            Github.
           </a>
           .
         </p>
@@ -111,21 +111,21 @@ const Contact = () => {
       <div className="flex flex-col py-2 mb-5 w-full space-y-6 items-center justify-center">
         <div className="divide-x divide-solid divide-white/50 grid grid-cols-3 w-full">
           <a
-            href="https://instagram.com/tarunfy"
+            href="https://instagram.com/devjain_official"
             target="_blank"
             className="flex items-center justify-center flex-col text-lg text-white"
           >
             <AiOutlineInstagram className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
           </a>
           <a
-            href="https://github.com/tarunfy"
+            href="https://github.com/devjainofficial"
             target="_blank"
             className="flex items-center justify-center flex-col text-lg text-white"
           >
             <BsGithub className="social-icon h-7 w-7 sm:h-8 sm:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" />
           </a>
           <a
-            href="https://twitter.com/tarunfy"
+            href="https://twitter.com/DevJain40356774"
             target="_blank"
             className="flex items-center justify-center flex-col text-lg text-white"
           >

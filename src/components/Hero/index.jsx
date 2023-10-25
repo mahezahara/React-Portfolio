@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profilePhoto from "../../assets/images/tarun.png";
+import profilePhoto from "../../assets/images/dev.jpg";
 import Tooltip from "@mui/material/Tooltip";
 import { Fade } from "@mui/material";
 import { motion } from "framer-motion";
@@ -31,7 +31,7 @@ const letters = [
   "🚀",
 ];
 
-const title = ["Hello!", "I'm", "Tarun"];
+const title = ["Hello!", "I'm", "Dev"];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
@@ -63,7 +63,7 @@ const Hero = () => {
               <div>
                 <img
                   src={profilePhoto}
-                  alt="Tarun Sharma"
+                  alt="Dev Jain"
                   onClick={handlePhrases}
                   id="profilePhoto"
                   className="rounded-full !z-10 lg:h-20 lg:w-20 md:h-16 md:w-16 vvs:h-14 vvs:w-14 w-12 h-12 hover:scale-[1.05] hover:shadow-custom1 hover:-rotate-12 transition-all duration-300 ease-in-out cursor-pointer"
@@ -75,7 +75,7 @@ const Hero = () => {
           <div className="flex justify-between items-center space-x-2 ">
             <div className="h-[1px] md:w-10 sm:w-7 vvs:w-5 w-4 bg-white"></div>
             <p className="text-white font-Glimer-Medium font-medium hover:text-[#EEA1BE] transition-colors duration-300 ease-in-out capitalize vss:text-sm md:text-base xl:text-lg text-xs">
-              Available for work
+              Available For New Opportunity
             </p>
           </div>
         </motion.div>

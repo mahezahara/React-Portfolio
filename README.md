@@ -22,8 +22,9 @@
 - React: A JavaScript library for building user interfaces.
 - Tailwind CSS: A utility-first CSS framework for rapid UI development.
 - Bootstrap: A front-end framework for building responsive and mobile-first websites.
-  
+
 ## Screenshots 📷
+
 ![Screenshot](https://github.com/Kinjal2004/React-Portfolio/assets/112677948/cb439a5b-1df9-4ee6-81b0-850fb706f35e)
 
 ## Usage 🚧

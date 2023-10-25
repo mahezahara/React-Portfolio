@@ -25,7 +25,8 @@
 
 ## Screenshots 📷
 
-![Screenshot](https://github.com/Kinjal2004/React-Portfolio/assets/112677948/cb439a5b-1df9-4ee6-81b0-850fb706f35e)
+![image](https://github.com/devjainofficial/React-Portfolio/assets/69387311/e768cacc-4665-4ae4-b6fa-471f3df48f59)
+
 
 ## Usage 🚧
 
@@ -41,3 +42,9 @@ Contributions are welcome. Please follow the standard GitHub flow:
 4. Push your changes to your branch.
 5. Open a pull request to the original repository.
 6. Our experts will review your code and merge it. If required, we will reach out to you for further improvements. 📦
+
+## Our Contributors:
+
+<a href="https://github.com/devjainofficial/React-Portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=devjainofficial/React-Portfolio" />
+</a>

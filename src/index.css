@@ -31,7 +31,9 @@
   font-family: "Glimer-Regular";
   src: url(./assets/Gilmer-Font/Gilmer\ Regular.otf);
 }
-
+html,body{
+  overflow-x: hidden;
+}
 @layer base {
   html,
   body {

@@ -9,7 +9,7 @@ function App() {
     <>
       <CustomCursor />
       <Hero />
-      <Projects />
+      // <Projects />
       <TechStack />
       <Contact />
     </>

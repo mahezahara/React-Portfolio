@@ -33,7 +33,7 @@ const letters = [
 
 const title = ["Hello!", "I'm", "Dev"];
 
-const Hero = () => {
+const Hero = ({color}) => {
   const [index, setIndex] = useState(0);
 
   const handlePhrases = () => {
@@ -45,7 +45,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:pt-48 sm:pb-0 pt-28 md:px-32 sm:px-28 vvs:px-12 px-10">
+    <section className={`w-full cursor-default bg-${color} xl:px-44 lg:px-40 sm:pt-48 sm:pb-0 pt-28 md:px-32 sm:px-28 vvs:px-12 px-101`}>
       <div className="hero-container flex flex-col">
         <motion.div
           animate={{ opacity: 1 }}
@@ -123,6 +123,10 @@ const Hero = () => {
       </div>
     </section>
   );
+};
+
+Hero.defaultProps = {
+  color: "primary",
 };
 
 export default Hero;

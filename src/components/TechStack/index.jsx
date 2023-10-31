@@ -14,7 +14,7 @@ import git from "../../assets/images/git.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TechStack = () => {
+const TechStack = ({color}) => {
   useEffect(() => {
     const container = document.getElementById("tech-stack");
 
@@ -166,7 +166,7 @@ const TechStack = () => {
   return (
     <div
       id="tech-stack"
-      className="h-[calc(100vh_+_20rem)] w-full  relative overflow-hidden"
+      className={`h-[calc(100vh_+_20rem)] w-full bg-${color}  relative overflow-hidden`}
     >
       <img
         src={react}
@@ -237,6 +237,10 @@ const TechStack = () => {
       </h1>
     </div>
   );
+};
+
+TechStack.defaultProps = {
+  color: "primary",
 };
 
 export default TechStack;

@@ -35,7 +35,8 @@
 @layer base {
   html,
   body {
-    background-color: #420fe7;
+    overflow-x: hidden;
+    /* background-color: #420fe7; */
   }
 
   .img {
@@ -96,7 +97,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 60%);
+  /* background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 60%); */
 }
 
 #tech-stack::after {
@@ -127,9 +128,21 @@
 }
 
 #projects {
-  background: linear-gradient(0deg, rgba(70, 19, 230, 1) 0%, #420fe7 90%);
+  /* background: linear-gradient(0deg, rgba(70, 19, 230, 1) 0%, #420fe7 90%); */
 }
 
 #contact-section {
-  background: linear-gradient(0deg, #420fe7 0%, rgba(70, 19, 230, 1) 95%);
+  /* background: linear-gradient(0deg, #420fe7 0%, rgba(70, 19, 230, 1) 95%); */
+}
+
+.bg-primary {
+  background: var(--theme-primary);
+}
+
+.bg-primary::before {
+  background: var(--theme-primary);
+}
+
+.pull-right {
+  float: right;
 }

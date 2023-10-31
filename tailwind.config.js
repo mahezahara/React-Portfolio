@@ -2,6 +2,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        primary: "var(--theme-primary)",
+        secondary: "var(--theme-secondary)",
+        "text-base": "var(--theme-text-base)"
+      },
       fontFamily: {
         "Glimer-Outlined": ["Glimer-Outlined", "sans-serif"],
         "Glimer-Bold": ["Glimer-Bold", "sans-serif"],

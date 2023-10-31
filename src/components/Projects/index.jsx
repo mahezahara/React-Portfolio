@@ -11,7 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Projects = () => {
+const Projects = ({color}) => {
   useEffect(() => {
     let containers = document.querySelectorAll(".container");
 
@@ -113,7 +113,7 @@ const Projects = () => {
 
   return (
     <div
-      className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10"
+      className={`w-full bg-${color} pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10`}
       id="projects"
     >
       <h1
@@ -125,18 +125,18 @@ const Projects = () => {
       <div className="sm:space-y-40 space-y-32 xl:space-y-[35vh] z-30">
         {/* LearningCafe */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
             <img
               src={learningCafe}
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+            <div className={`img-container absolute top-0 right-0 bg-${color} w-full h-full`}></div>
           </div>
 
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
+              <div className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
                 <div className="content-line-inner">Learning Cafe</div>
               </div>
             </h1>
@@ -171,7 +171,7 @@ const Projects = () => {
         <div className="container lg:space-x-2  flex flex-col-reverse lg:flex-row lg:justify-between  lg:items-center items-start invisible ">
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
+              <div className={`content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
                 <div className="content-line-inner">Hirely</div>
               </div>
             </h1>
@@ -201,30 +201,30 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
             <img
               src={hirely}
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
+            <div className={`img-container absolute top-0 left-0 bg-${color} w-full h-full`}></div>
           </div>
         </div>
 
         {/* Formify */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
             <img
               src={formify}
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+            <div className={`img-container absolute top-0 right-0 bg-${color} w-full h-full`}></div>
           </div>
 
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
+              <div className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
                 <div className="content-line-inner">Formify</div>
               </div>
             </h1>
@@ -259,7 +259,7 @@ const Projects = () => {
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
+              <div className={`content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
                 <div className="content-line-inner">Easy Staff</div>
               </div>
             </h1>
@@ -289,30 +289,30 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color} `}>
             <img
               src={easyStaff}
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
+            <div className={`img-container absolute top-0 left-0 bg-${color} w-full h-full`}></div>
           </div>
         </div>
 
         {/* Planitio */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
             <img
               src={planitio}
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+            <div className={`img-container absolute top-0 right-0 bg-${color} w-full h-full`}></div>
           </div>
 
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text cursor-default font-Glimer-Bold font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
+              <div className={`content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
                 <div className="content-line-inner">Planit.io</div>
               </div>
             </h1>
@@ -347,7 +347,7 @@ const Projects = () => {
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
             <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
-              <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
+              <div className={`content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-${color}`}>
                 <div className="content-line-inner">Bloggy</div>
               </div>
             </h1>
@@ -377,18 +377,22 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+          <div className={`lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper bg-${color}`}>
             <img
               src={bloggy}
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
+            <div className={`img-container absolute top-0 left-0 bg-${color} w-full h-full`}></div>
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+Projects.defaultProps = {
+  color: "primary",
 };
 
 export default Projects;

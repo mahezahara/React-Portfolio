@@ -10,7 +10,6 @@ import darkTheme from "../../themes/dark";
 
 function ThemeSelect() {
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
   const [mode, setMode] = useState("system");
 
   if (mode === "system") {
@@ -45,22 +44,27 @@ function ThemeSelect() {
       onChange={handleChange}
       variant="outlined"
       sx={{
-        minWidth: 60,
-        height: 40,
+        width: 48,
+        height: 48,
+        borderRadius: "50%",
         position: "fixed",
         bottom: 20,
         left: 20,
         zIndex: 1000,
-        backgroundColor: "var(--background-color)",
-        color: "var(--text-color)",
-        "& .MuiSelect-icon": {
-          display: "none",
-        },
+        backgroundColor: "var(--background-color, #eee)",
+        color: "var(--text-color, #000)",
+        boxShadow: "0 2px 6px rgba(0,0,0,0.15)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         "& .MuiSelect-select": {
-          pr: 0,
+          padding: 4,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+        },
+        "& .MuiSelect-icon": {
+          display: "none",
         },
         "& .MuiOutlinedInput-notchedOutline": {
           border: "none",
@@ -69,13 +73,13 @@ function ThemeSelect() {
       renderValue={() => renderIcon()}
     >
       <MenuItem value="light">
-        <LightModeIcon sx={{ mr: 1 }} />
+        <LightModeIcon />
       </MenuItem>
       <MenuItem value="system">
-        <LaptopIcon sx={{ mr: 1 }} />
+        <LaptopIcon />
       </MenuItem>
       <MenuItem value="dark">
-        <DarkModeIcon sx={{ mr: 1 }} />
+        <DarkModeIcon />
       </MenuItem>
     </Select>
   );

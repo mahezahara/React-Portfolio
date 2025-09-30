@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "Glimer-Outlined";
   src: url(./assets/Gilmer-Font/Gilmer\ Outline.otf);
